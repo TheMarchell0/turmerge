@@ -1,5 +1,16 @@
 @import url(fonts.css);
 @import url(normalize.css);
+@import url(blocks/hero.css);
+@import url(blocks/info.css);
+@import url(blocks/takeaways.css);
+@import url(blocks/experience.css);
+@import url(blocks/invited.css);
+@import url(blocks/program.css);
+@import url(blocks/broadcast.css);
+@import url(blocks/party.css);
+@import url(blocks/invited-program.css);
+@import url(blocks/golf.css);
+@import url(blocks/contacts.css);
 
 
 * {
@@ -11,9 +22,13 @@
     box-sizing: border-box;
 }
 
+main {
+    min-height: 100vh;
+}
+
 .container {
     margin: 0 auto;
-    max-width: 1330px;
+    max-width: 1400px;
     position: relative;
     padding: 0 20px;
 }
@@ -29,4 +44,22 @@
     clip-path: inset(100%) !important;
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.loader-decor {
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
