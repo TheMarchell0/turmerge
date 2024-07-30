@@ -10,12 +10,18 @@
 }
 
 .takeaways__title {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 52.8px;
-    text-transform: uppercase;
     max-width: 950px;
-    width: 100%;
+}
+
+.takeaways__content-item:nth-child(2)::after {
+    content: '';
+    display: block;
+    background: url('/images/takeaways-decor-2.svg') no-repeat center;
+    width: 153px;
+    height: 76px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .takeaways__list {
@@ -80,7 +86,7 @@
 }
 
 .takeaways__long-decor::before {
-    background: url('/images/takeaways-bottom-decor.svg') no-repeat center;
+    background: url('/images/arrow-figure-decor.svg') no-repeat center;
     width: 96px;
     height: 48px;
     bottom: 0;

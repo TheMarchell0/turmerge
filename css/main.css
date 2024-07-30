@@ -55,6 +55,149 @@ main {
     animation: rotate 2s linear infinite;
 }
 
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.program-title {
+    min-height: 36px;
+    background-color: #000000;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    padding: 0 13px 0 43px;
+}
+
+.program-title::before {
+    content: '';
+    display: block;
+    background: url('/images/program-decor.svg') no-repeat center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+}
+
+.program-title h3 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.program-title.red {
+    background-color: #FF0000;
+}
+
+.program-date {
+    min-height: 52px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 55px 0 47px;
+    justify-content: space-between;
+}
+
+.program-date::before,
+.program-date::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.program-date::before {
+    background: url('/images/program-date-decor-1.svg') no-repeat center;
+    width: 10.32px;
+    height: 19.68px;
+    left: 22px;
+}
+
+.program-date::after {
+    background: url('/images/program-date-decor-2.svg') no-repeat center;
+    width: 20.28px;
+    height: 20.08px;
+    right: 22px;
+}
+
+.program-date__text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.program-date__img-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.program-list {
+    position: relative;
+}
+
+.program-list::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 97%;
+    background-color: #000000;
+    position: absolute;
+    top: 6px;
+    left: 7.5px;
+}
+
+.program-list-item {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    padding-left: 37px;
+    width: fit-content;
+    position: relative;
+}
+
+.program-list-item:not(:last-of-type) {
+    margin-bottom: 42px;
+}
+
+.program-list-item:last-of-type span {
+    border: 2px solid #FF0000;
+    border-radius: 25.76px;
+    padding: 4px 12px;
+    display: block;
+}
+
+.program__list-notices-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+.program-list-item:last-of-type::before {
+    background-color: #FF0000;
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);

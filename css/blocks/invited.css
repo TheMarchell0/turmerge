@@ -1,0 +1,19 @@
+.invited__img-wrapper {
+    border: 2px solid #000000;
+    border-radius: 52px;
+    margin:0 auto;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    padding: 70px 20px 68px;
+}
+
+.invited__img {
+    max-width: 1144px;
+    width: 100%;
+}
+
+.invited__decor {
+    top: -43px;
+    right: -1px;
+}
