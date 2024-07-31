@@ -9,6 +9,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 0;
+    animation: rotateCenter 10s linear infinite;
 }
 
 .info__text {

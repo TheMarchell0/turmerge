@@ -32,17 +32,32 @@
     max-height: 959px;
 }
 
+.program__item:nth-child(2) .program__list {
+    max-height: 820px;
+}
+
 .program__list-item {
-    max-width: 640px;
     width: 100%;
+}
+
+.program__item:nth-child(1) .program__list-item {
+    max-width: 640px;
+}
+
+.program__item:nth-child(2) .program__list-item {
+    max-width: 670px;
 }
 
 .program__list-item:nth-child(n):not(:nth-child(4)):not(:last-child) {
     margin-bottom: 19px;
 }
 
-.program__list-item:nth-child(-n+4) {
+.program__item:first-child .program__list-item:nth-child(-n+4) {
     margin-right: 80px;
+}
+
+.program__item:nth-child(2) .program__list-item:first-child {
+    margin-right: 22px;
 }
 
 .program__list-head {
@@ -148,6 +163,7 @@
     line-height: 30.75px;
     padding-bottom: 16px;
     margin-bottom: 17px;
+    max-width: 542px;
 }
 
 .program__list-text,
@@ -175,4 +191,79 @@
     padding: 0 13px;
     width: fit-content;
     min-height: 41px;
+    margin: 24px 0;
+}
+
+.program__advertise {
+    background-color: #000000;
+    border-radius: 20px;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 33px 20px 26px 33px;
+    margin-bottom: 27px;
+    z-index: 1;
+    position: relative;
+}
+
+.program__advertise-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.52px;
+    margin-bottom: 9px;
+}
+
+.program__advertise-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.6px;
+}
+
+.program__certificate {
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 40px 35px 62px;
+}
+
+.program__certificate::before,
+.program__certificate::after {
+    content: '';
+    display: block;
+    background: url('/images/red-star-decor.svg') no-repeat center;
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    background-size: cover;
+}
+
+.program__certificate::before {
+    top: -79px;
+    right: 45px;
+}
+
+.program__certificate::after {
+    bottom: -53px;
+    left: 248px;
+}
+
+.program__certificate-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49.2px;
+    text-transform: uppercase;
+}
+
+.program__certificate-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.68px;
+    max-width: 300px;
+    width: 100%;
+    margin: 23px 0 15px;
+}
+
+.program__certificate-img {
+    position: absolute;
+    right: 13px;
+    bottom: -149px;
 }
