@@ -26,18 +26,11 @@
 }
 
 .program__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     max-height: 959px;
 }
-
+/*tut*/
 .program__item:nth-child(2) .program__list {
     max-height: 820px;
-}
-
-.program__list-item {
-    width: 100%;
 }
 
 .program__item:nth-child(1) .program__list-item {
@@ -177,6 +170,8 @@
     font-size: 20px;
     line-height: 24.6px;
 }
+
+/*tut*/
 
 .program__list-notice-title {
     color: #FFFFFF;

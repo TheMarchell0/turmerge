@@ -184,6 +184,7 @@ main {
 
 .program-list {
     position: relative;
+    overflow: hidden;
 }
 
 .program-list::before {
@@ -210,14 +211,14 @@ main {
     margin-bottom: 42px;
 }
 
-.program-list-item:last-of-type span {
+.program-list-item:last-of-type span.red {
     border: 2px solid #FF0000;
     border-radius: 25.76px;
     padding: 4px 12px;
     display: block;
 }
 
-.program__list-notices-item::before {
+.program-list-item::before {
     content: '';
     display: block;
     position: absolute;
@@ -232,6 +233,131 @@ main {
 
 .program-list-item:last-of-type::before {
     background-color: #FF0000;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.schedule__item {
+    width: 100%;
+}
+
+.schedule__head {
+    margin-bottom: 14px;
+}
+
+.schedule__head.big {
+    margin-bottom: 23px;
+}
+
+.schedule__head-item {
+    display: flex;
+    align-items: center;
+}
+
+.schedule__head-item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.schedule__head-time {
+    max-width: 100px;
+    width: 100%;
+    min-height: 36px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    border-radius: 20px;
+    background-color: #FFC8C8;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 43px;
+}
+
+.schedule__head-time.big {
+    min-height: 41px;
+    max-width: initial;
+    width: fit-content;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 0 13px 0 46px;
+}
+
+.schedule__head-time::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    background: url('/images/time-decor.svg') no-repeat center;
+    width: 20px;
+    height: 20px;
+}
+
+.schedule__head-time.big::before {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+
+.schedule__head-text {
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.schedule__head-time.gray {
+    background-color: #E2E2E2;
+}
+
+.program__list-head-item:nth-child(even) .program__list-head-text,
+.program__list-head-item:last-child .program__list-head-text {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #000000;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 13px;
+}
+
+.program_list-head-notice {
+    margin-left: 18px;
+}
+
+.schedule__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.68px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+}
+
+.schedule__title.big {
+    font-size: 25px;
+    line-height: 30.75px;
+    padding-bottom: 16px;
+    margin-bottom: 17px;
+    max-width: 542px;
+}
+
+.schedule__text,
+.program_list-head-notice {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.68px;
+}
+
+.schedule__text.big {
+    font-size: 20px;
+    line-height: 24.6px;
 }
 
 @keyframes rotate {
