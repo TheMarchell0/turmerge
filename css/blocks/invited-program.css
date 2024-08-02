@@ -1,0 +1,10 @@
+.invited-program__container::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(/images/arrow-figure-decor_red.svg) no-repeat center;
+    width: 96px;
+    height: 48px;
+}
