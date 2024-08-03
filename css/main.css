@@ -274,6 +274,8 @@ main {
     display: flex;
     align-items: center;
     padding: 0 0 0 43px;
+    position: relative;
+    text-transform: uppercase;
 }
 
 .schedule__head-time.big {
@@ -313,8 +315,7 @@ main {
     background-color: #E2E2E2;
 }
 
-.program__list-head-item:nth-child(even) .program__list-head-text,
-.program__list-head-item:last-child .program__list-head-text {
+.schedule-head-item:last-child .schedule__head-text {
     font-weight: 400;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -326,18 +327,25 @@ main {
     padding: 0 13px;
 }
 
-.program_list-head-notice {
-    margin-left: 18px;
-}
-
 .schedule__title {
     font-size: 16px;
     font-weight: 600;
     line-height: 19.68px;
     text-transform: uppercase;
-    border-bottom: 1px solid #000000;
     padding-bottom: 2px;
     margin-bottom: 10px;
+    position: relative;
+}
+
+.schedule__title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
 }
 
 .schedule__title.big {
@@ -345,11 +353,9 @@ main {
     line-height: 30.75px;
     padding-bottom: 16px;
     margin-bottom: 17px;
-    max-width: 542px;
 }
 
-.schedule__text,
-.program_list-head-notice {
+.schedule__text{
     font-size: 16px;
     font-weight: 300;
     line-height: 19.68px;

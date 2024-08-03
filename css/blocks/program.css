@@ -28,7 +28,11 @@
 .program__list {
     max-height: 959px;
 }
-/*tut*/
+
+.program__list-title.big {
+    max-width: 542px;
+}
+
 .program__item:nth-child(2) .program__list {
     max-height: 820px;
 }
@@ -53,78 +57,10 @@
     margin-right: 22px;
 }
 
-.program__list-head {
-    margin-bottom: 14px;
+.program__item:nth-child(2) .program__list-item:first-child .program__list-title::after {
+    width: 85%;
 }
 
-.program__list-head.big {
-    margin-bottom: 23px;
-}
-
-.program__list-head-item {
-    display: flex;
-    align-items: center;
-}
-
-.program__list-head-item:not(:last-child) {
-    margin-bottom: 25px;
-}
-
-.program__list-head-time {
-    max-width: 100px;
-    width: 100%;
-    min-height: 36px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    border-radius: 20px;
-    background-color: #FFC8C8;
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 43px;
-}
-
-.program__list-head-time.big {
-    min-height: 41px;
-    max-width: initial;
-    width: fit-content;
-}
-
-.program__list-head-time.big {
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 25px;
-    padding: 0 13px 0 46px;
-}
-
-.program__list-head-time::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 12px;
-    background: url('/images/time-decor.svg') no-repeat center;
-    width: 20px;
-    height: 20px;
-}
-
-.program__list-head-time.big::before {
-    width: 25px;
-    height: 25px;
-    background-size: cover;
-}
-
-.program__list-head-text {
-    margin-left: 20px;
-    flex-shrink: 0;
-}
-
-.program__list-head-time.gray {
-    background-color: #E2E2E2;
-}
-
-.program__list-head-item:nth-child(even) .program__list-head-text,
 .program__list-head-item:last-child .program__list-head-text {
     font-weight: 400;
     text-transform: uppercase;
@@ -139,39 +75,10 @@
 
 .program_list-head-notice {
     margin-left: 18px;
-}
-
-.program__list-title {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19.68px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #000000;
-    padding-bottom: 2px;
-    margin-bottom: 10px;
-}
-
-.program__list-title.big {
-    font-size: 25px;
-    line-height: 30.75px;
-    padding-bottom: 16px;
-    margin-bottom: 17px;
-    max-width: 542px;
-}
-
-.program__list-text,
-.program_list-head-notice {
     font-size: 16px;
     font-weight: 300;
     line-height: 19.68px;
 }
-
-.program__list-text.big {
-    font-size: 20px;
-    line-height: 24.6px;
-}
-
-/*tut*/
 
 .program__list-notice-title {
     color: #FFFFFF;

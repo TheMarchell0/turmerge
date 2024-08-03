@@ -8,3 +8,32 @@
     width: 96px;
     height: 48px;
 }
+
+.invited-program__content {
+    display: flex;
+}
+
+.invited-program__content-item:first-child {
+    max-width: 795px;
+    width: 100%;
+}
+
+.invited-program__schedule {
+    max-width: 613px;
+}
+
+.invited-program__schedule-title::after {
+    width: 58%;
+}
+
+.invited-program__img-wrapper::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(/images/gray-star-decor.svg) no-repeat center;
+    position: absolute;
+    width: 215px;
+    height: 215px
+}
