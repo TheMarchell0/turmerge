@@ -72,6 +72,11 @@ main {
     color: #FFFFFF;
 }
 
+.title.big {
+    font-size: 64px;
+    line-height: 70.4px;
+}
+
 .program-title {
     min-height: 36px;
     background-color: #000000;
