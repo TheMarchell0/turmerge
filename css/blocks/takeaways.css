@@ -1,3 +1,7 @@
+.takeaways {
+    padding: 63px 0 125px;
+}
+
 .takeaways__container::before {
     content: '';
     display: block;
@@ -5,12 +9,16 @@
     width: 40px;
     height: 256px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 142px;
+    left: 20px;
 }
 
 .takeaways__title {
     max-width: 950px;
+}
+
+.takeaways__content {
+    display: flex;
 }
 
 .takeaways__content-item:nth-child(2)::after {
@@ -20,8 +28,23 @@
     width: 153px;
     height: 76px;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: -105px;
+    left: 158px;
+}
+
+.takeaways__img {
+    position: absolute;
+}
+
+.takeaways__img_1 {
+    top: 7px;
+    left: -71px;
+    z-index: 1;
+}
+
+.takeaways__img_2 {
+    top: -72px;
+    left: 83px;
 }
 
 .takeaways__list {
@@ -29,6 +52,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 500px;
+    margin: 36px 0 0 110px;
+    max-width: 928px;
+    width: 100%;
 }
 
 .takeaways__list-item {
@@ -65,6 +91,16 @@
     font-weight: 700;
 }
 
+.takeaways__loader-decor_1 {
+    top: -15px;
+    left: 115px;
+}
+
+.takeaways__loader-decor_2 {
+    top: -41px;
+    left: 10px;
+}
+
 .takeaways__long-decor {
     height: 90px;
 }
@@ -81,14 +117,14 @@
     max-width: 678px;
     width: 100%;
     height: 5px;
-    bottom: 0;
-    left: 0;
+    top: 21px;
+    right: 93px;
 }
 
 .takeaways__long-decor::before {
     background: url('/images/arrow-figure-decor.svg') no-repeat center;
     width: 96px;
     height: 48px;
-    bottom: 0;
-    left: 0;
+    top: 2px;
+    right: -18px;
 }

@@ -1,3 +1,7 @@
+.program {
+    padding: 70px 0 0px;
+}
+
 .program__head.decor::before,
 .program__head.decor::after {
     content: '';
@@ -23,6 +27,7 @@
 
 .program__date {
     max-width: 819px;
+    margin: 14px 0 49px;
 }
 
 .program__list {
@@ -33,24 +38,24 @@
     max-width: 542px;
 }
 
-.program__item:nth-child(2) .program__list {
-    max-height: 820px;
+.program__item:nth-child(1) {
+    margin-bottom: 71px;
 }
 
 .program__item:nth-child(1) .program__list-item {
     max-width: 640px;
 }
 
+.program__item:nth-child(1) .program__list-item:nth-child(-n+4) {
+    margin-right: 80px;
+}
+
+.program__item:nth-child(2) .program__list {
+    max-height: 820px;
+}
+
 .program__item:nth-child(2) .program__list-item {
     max-width: 670px;
-}
-
-.program__list-item:nth-child(n):not(:nth-child(4)):not(:last-child) {
-    margin-bottom: 19px;
-}
-
-.program__item:first-child .program__list-item:nth-child(-n+4) {
-    margin-right: 80px;
 }
 
 .program__item:nth-child(2) .program__list-item:first-child {
@@ -59,6 +64,10 @@
 
 .program__item:nth-child(2) .program__list-item:first-child .program__list-title::after {
     width: 85%;
+}
+
+.program__list-item:nth-child(n):not(:nth-child(4)):not(:last-child) {
+    margin-bottom: 19px;
 }
 
 .program__list-head-item:last-child .program__list-head-text {
@@ -102,7 +111,7 @@
     color: #FFFFFF;
     width: 100%;
     padding: 33px 20px 26px 33px;
-    margin-bottom: 27px;
+    margin: 22px 0 27px;
     z-index: 1;
     position: relative;
 }

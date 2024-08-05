@@ -1,9 +1,13 @@
+.invited-program {
+    padding: 96px 0 105px;
+}
+
 .invited-program__container::after {
     content: '';
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -55px;
+    right: 20px;
     background: url(/images/arrow-figure-decor_red.svg) no-repeat center;
     width: 96px;
     height: 48px;
@@ -18,22 +22,49 @@
     width: 100%;
 }
 
+.invited-program__date {
+    margin: 12px 0 48px;
+}
+
 .invited-program__schedule {
     max-width: 613px;
+}
+
+.invited-program__schedule-item:not(:last-child) {
+    margin-bottom: 59px;
 }
 
 .invited-program__schedule-title::after {
     width: 58%;
 }
 
+.invited-program__schedule-text {
+    margin-bottom: 24px;
+}
+
 .invited-program__img-wrapper::before {
     content: '';
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 188px;
+    left: 44px;
     background: url(/images/gray-star-decor.svg) no-repeat center;
-    position: absolute;
+    background-size: cover;
     width: 215px;
-    height: 215px
+    height: 215px;
+    z-index: 1;
+}
+
+.invited-program__img {
+    position: absolute;
+}
+
+.invited-program__img_1 {
+    top: 47px;
+    left: 217px;
+}
+
+.invited-program__img_2 {
+    top: 423px;
+    left: 6px;
 }

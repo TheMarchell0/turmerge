@@ -1,3 +1,11 @@
+.invited {
+    padding: 95px 0 10px;
+}
+
+.invited__title {
+    margin-bottom: 101px;
+}
+
 .invited__img-wrapper {
     border: 2px solid #000000;
     border-radius: 52px;

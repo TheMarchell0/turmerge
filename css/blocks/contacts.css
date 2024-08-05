@@ -1,3 +1,7 @@
+.contacts {
+    padding: 229px 0 76px;
+}
+
 .contacts__container::before,
 .contacts__container::after {
     content: '';
@@ -10,8 +14,8 @@
     background-size: cover;
     width: 304px;
     height: 304px;
-    top: 0;
-    left: 100px;
+    top: -136px;
+    left: 299px;
 }
 
 .contacts__container::after {
@@ -19,12 +23,19 @@
     background-size: cover;
     width: 119px;
     height: 119px;
-    top: 100px;
-    right: 100px;
+    top: 129px;
+    right: 490px;
+}
+
+.contacts__img {
+    position: absolute;
+    top: -136px;
+    right: 20px;
 }
 
 .contacts__content {
     display: flex;
+    margin-top: 341px;
 }
 
 .contacts__content::before,
@@ -46,12 +57,13 @@
     background: url(/images/arrow-figure-decor_red.svg) no-repeat center;
     width: 96px;
     height: 48px;
-    left: 0;
-    bottom: 0;
+    left: 267px;
+    bottom: -23px;
 }
 
 .contacts__content-item:first-child {
     flex: 0 1 59%;
+    padding-bottom: 72px;
 }
 
 .contacts__content-title {

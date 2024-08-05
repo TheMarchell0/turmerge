@@ -19,7 +19,7 @@
     height: 309px;
     background: url('/images/red-square.svg') no-repeat center;
     right: 20px;
-    bottom: 244px;
+    bottom: -314px;
 }
 
 .golf__title {
@@ -31,6 +31,7 @@
     font-weight: 500;
     line-height: 29.52px;
     text-transform: uppercase;
+    margin: 25px 0 72px;
 }
 
 .golf__description span {
@@ -91,4 +92,24 @@
     top: 50%;
     transform: translateY(-50%);
     left: 0;
+}
+
+.golf__img {
+    position: absolute;
+    z-index: 1;
+}
+
+.golf__img_1 {
+    top: 166px;
+    right: 49px;
+}
+
+.golf__img_2 {
+    bottom: -320px;
+    right: 256px;
+}
+
+.golf__img_3 {
+    bottom: -313px;
+    left: 20px;
 }

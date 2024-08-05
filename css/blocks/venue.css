@@ -1,3 +1,7 @@
+.venue {
+    padding: 513px 0 10px;
+}
+
 .venue__container::before,
 .venue__container::after {
     content: '';
@@ -19,7 +23,7 @@
     height: 272px;
     background: url('/images/red-square.svg') no-repeat center;
     right: 20px;
-    bottom: 386px;
+    bottom: 111px;
     background-size: cover;
 }
 
@@ -32,6 +36,7 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 29.52px;
+    margin: 24px 0 45px;
 }
 
 .venue__notice {
@@ -39,7 +44,7 @@
     width: 100%;
     border: 2px solid #000000;
     border-radius: 20px;
-    padding: 33px 31px;
+    padding: 33px 31px 28px;
 }
 
 .venue__notice-title {
@@ -70,6 +75,7 @@
     max-width: 464px;
     width: 100%;
     padding-left: 48px;
+    margin-top: 32px;
 }
 
 .venue__comment::before {
@@ -81,4 +87,24 @@
     width: 24px;
     height: 24px;
     background: url('/images/red-star-decor_bold.svg') no-repeat center;
+}
+
+.venue__img {
+    position: absolute;
+    z-index: 1;
+}
+
+.venue__img_1 {
+    top: -9px;
+    right: 74px;
+}
+
+.venue__img_2 {
+    top: 254px;
+    right: 225px;
+}
+
+.venue__img_3 {
+    top: 438px;
+    right: 109px;
 }

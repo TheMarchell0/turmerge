@@ -1,6 +1,7 @@
 .experience__head {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .experience__head-item:first-child {
@@ -40,6 +41,7 @@
 .experience__list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 41px;
 }
 
 .experience__list-item {
