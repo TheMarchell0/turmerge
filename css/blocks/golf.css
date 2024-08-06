@@ -83,7 +83,8 @@
     height: 117px;
     bottom: -148px;
     left: 197px;
-    animation: rotate 2s linear infinite;
+    animation: rotate 10s linear infinite;
+    z-index: 2;
 }
 
 .golf__list-item::before {
@@ -112,4 +113,22 @@
 .golf__img_3 {
     bottom: -313px;
     left: 20px;
+}
+
+@media (max-width: 1440px) {
+
+    .invited-program__img_1 {
+        right: -38vw;
+        left: initial;
+    }
+
+    .invited-program__img_2 {
+        right: -11vw;
+        left: initial;
+    }
+
+    .invited-program__img-wrapper::before {
+        right: -8vw;
+        left: initial;
+    }
 }

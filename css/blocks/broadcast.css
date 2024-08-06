@@ -40,6 +40,7 @@
     border: 2px solid #000000;
     border-radius: 26px;
     padding: 1px 13px 2px 3px;
+    white-space: nowrap;
 }
 
 .broadcast__content-text {
@@ -102,4 +103,26 @@
 .broadcast__img_2 {
     top: -13px;
     right: -79px;
+}
+
+@media (max-width: 1440px) {
+    .broadcast {
+        padding: 95px 0 345px;
+    }
+
+    .broadcast__img_1 {
+        right: 16vw;
+        left: initial;
+        bottom: -273px;
+    }
+
+    .broadcast__img_2 {
+        right: -10vw;
+    }
+
+    .broadcast__content-item:nth-child(2)::before {
+        top: 153px;
+        z-index: 1;
+        left: -2vw;
+    }
 }

@@ -23,8 +23,15 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: auto;
+}
+
 main {
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -53,7 +60,7 @@ main {
 
 .loader-decor {
     position: absolute;
-    animation: rotate 2s linear infinite;
+    animation: rotate 3s linear infinite;
 }
 
 .title {

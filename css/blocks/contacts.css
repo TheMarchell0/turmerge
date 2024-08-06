@@ -16,6 +16,8 @@
     height: 304px;
     top: -136px;
     left: 299px;
+    animation: rotate 10s linear infinite;
+    z-index: 1;
 }
 
 .contacts__container::after {
@@ -25,6 +27,7 @@
     height: 119px;
     top: 129px;
     right: 490px;
+    animation: rotateReverse 10s linear infinite;
 }
 
 .contacts__img {
@@ -174,4 +177,24 @@
 
 .contacts__link:hover {
     opacity: 0.4;
+}
+
+@media (max-width: 1440px) {
+    .contacts__container::before {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contacts__container::after {
+        top: 216px;
+        right: 19vw;
+    }
+
+    .contacts__content {
+        justify-content: space-between;
+    }
+
+    .contacts__content-item:first-child {
+        flex: 0 1 46%;
+    }
 }

@@ -34,8 +34,8 @@
     margin-bottom: 59px;
 }
 
-.invited-program__schedule-title::after {
-    width: 58%;
+.invited-program .invited-program__schedule-title::after {
+    width: 75.1%;
 }
 
 .invited-program__schedule-text {
@@ -53,6 +53,7 @@
     width: 215px;
     height: 215px;
     z-index: 1;
+    animation: rotate 10s linear infinite;
 }
 
 .invited-program__img {

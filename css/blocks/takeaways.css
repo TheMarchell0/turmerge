@@ -128,3 +128,61 @@
     top: 2px;
     right: -18px;
 }
+
+@media (max-width: 1440px) {
+    .takeaways {
+        padding: 63px 0 680px;
+    }
+
+    .takeaways__content {
+        flex-direction: column;
+    }
+
+    .takeaways__list {
+        margin: 36px 0 0 0px;
+        max-width: initial;
+        max-height: 556px;
+    }
+
+    .takeaways__long-decor::after {
+        left: 94px;
+        right: initial;
+    }
+
+    .takeaways__long-decor::before {
+        left: 800px;
+        right: initial;
+    }
+
+    .takeaways__list-item {
+        max-width: 42%;
+    }
+
+    .takeaways__container::before {
+        top: 0;
+        right: 20px;
+        left: initial;
+    }
+
+    .takeaways__loader-decor_1 {
+        left: 0;
+    }
+
+    .takeaways__loader-decor_2 {
+        display: none;
+    }
+
+    .takeaways__img_1 {
+        left: -21px;
+    }
+
+    .takeaways__img_2 {
+        left: 153px;
+    }
+
+    .takeaways__content-item:nth-child(2)::after {
+        bottom: -467px;
+        right: 158px;
+        left: initial;
+    }
+}

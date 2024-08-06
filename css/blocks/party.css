@@ -176,3 +176,42 @@
 .party__notice-text {
     font-weight: 400;
 }
+
+@media (max-width: 1440px) {
+    .party__container {
+        min-height: 1048px;
+    }
+
+    .party__img_1 {
+        top: 255px;
+        right: -194px;
+    }
+
+    .party__info::before {
+        top: -46px;
+        right: 44px;
+    }
+
+    .party__program {
+        bottom: 105px;
+        right: 129px;
+        left: initial;
+    }
+
+    .party__notice {
+        top: 179px;
+    }
+
+    .party__img_2 {
+        bottom: 37px;
+        left: 109px;
+    }
+
+    .party__img_3 {
+        bottom: 181px;
+    }
+
+    .party__title::after {
+        bottom: 117px;
+    }
+}
