@@ -116,19 +116,36 @@
 }
 
 @media (max-width: 1440px) {
-
-    .invited-program__img_1 {
-        right: -38vw;
-        left: initial;
+    .golf__container::before {
+        top: 268px;
+        right: 154px;
     }
 
-    .invited-program__img_2 {
-        right: -11vw;
-        left: initial;
+    .golf__list {
+        max-width: 60%;
     }
 
-    .invited-program__img-wrapper::before {
-        right: -8vw;
-        left: initial;
+    .golf__list::before {
+        bottom: -513px;
+        left: 406px;
+    }
+
+    .golf__list::after {
+        bottom: -378px;
+        left: 103px;
+    }
+
+    .golf__img_1 {
+        top: 220px;
+        right: 16px;
+    }
+
+    .golf__img_2 {
+        bottom: -383px;
+        right: 205px;
+    }
+
+    .golf__img_3 {
+        bottom: -560px;
     }
 }

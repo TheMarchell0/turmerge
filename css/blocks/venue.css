@@ -108,3 +108,9 @@
     top: 438px;
     right: 109px;
 }
+
+@media (max-width: 1440px) {
+    .venue {
+        padding: 711px 0 10px;
+    }
+}

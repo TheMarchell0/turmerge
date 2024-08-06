@@ -69,3 +69,21 @@
     top: 423px;
     left: 6px;
 }
+
+@media (max-width: 1440px) {
+
+    .invited-program__img_1 {
+        right: -38vw;
+        left: initial;
+    }
+
+    .invited-program__img_2 {
+        right: -11vw;
+        left: initial;
+    }
+
+    .invited-program__img-wrapper::before {
+        right: -8vw;
+        left: initial;
+    }
+}
